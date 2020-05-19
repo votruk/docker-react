@@ -6,4 +6,4 @@ before_install:
     - docker build -t votruk/docker-react -f Dockerfile.dev .
 
 script:
-    - dockeer run votruk/docker-react npm run test -- --coverage
+    - docker run votruk/docker-react npm run test -- --coverage
